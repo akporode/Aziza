@@ -1,0 +1,32 @@
+32	Loss	30–1–1	United States Andre Ward	UD	12	19 Nov 2016	United States T-Mobile Arena, Paradise, Nevada, US	Lost WBA (Undisputed), IBF, and WBO (Super) light heavyweight titles
+31	Win	30–0–1	Malawi Isaac Chilemba	UD	12	11 Jul 2016	Russia DIVS, Yekaterinburg, Russia	Retained WBA (Undisputed), IBF, and WBO (Super) light heavyweight titles
+30	Win	29–0–1	Canada Jean Pascal	RTD	7 (12), 3:00	30 Jan 2016	Canada Centre Bell, Montreal, Quebec, Canada	Retained WBA (Undisputed), IBF, and WBO (Super) light heavyweight titles
+29	Win	28–0–1	France Nadjib Mohammedi	TKO	3 (12), 2:38	25 Jul 2015	United States Mandalay Bay Events Center, Paradise, Nevada, US	Retained WBA (Undisputed), IBF, and WBO (Super) light heavyweight titles
+28	Win	27–0–1	Canada Jean Pascal	TKO	8 (12), 1:03	14 Mar 2015	Canada Centre Bell, Montreal, Quebec, Canada	Retained WBA (Undisputed), IBF, and WBO (Super) light heavyweight titles
+27	Win	26–0–1	United States Bernard Hopkins	UD	12	8 Nov 2014	United States Boardwalk Hall, Atlantic City, New Jersey, US	Retained WBO (Super) light heavyweight title;Won WBA (Super) and IBF light heavyweight titles
+26	Win	25–0–1	Australia Blake Caparello	TKO	2 (12), 1:34	2 Aug 2014	United States Revel Casino Hotel, Atlantic City, New Jersey, US	Retained WBO light heavyweight title
+25	Win	24–0–1	United States Cedric Agnew	KO	7 (12), 0:58	29 Mar 2014	United States Boardwalk Hall, Atlantic City, New Jersey, US	Retained WBO light heavyweight title
+24	Win	23–0–1	Ukraine Ismail Sillakh	KO	2 (12), 2:12	30 Nov 2013	Canada Colisée Pepsi, Quebec City, Quebec, Canada	Retained WBO light heavyweight title
+23	Win	22–0–1	United Kingdom Nathan Cleverly	TKO	4 (12), 0:29	17 Aug 2013	United Kingdom Motorpoint Arena, Cardiff, Wales	Won WBO light heavyweight title
+22	Win	21–0–1	United States Cornelius White	TKO	3 (12), 1:45	14 Jun 2013	United States Sands Casino Resort, Bethlehem, Pennsylvania, US	
+21	Win	20–0–1	Spain Gabriel Campillo	KO	3 (10), 1:30	19 Jan 2013	United States Mohegan Sun Arena, Montville, Connecticut, US	
+20	Win	19–0–1	United States Lionell Thompson	TKO	3 (10), 0:14	21 Sep 2012	United States Sands Casino Resort, Bethlehem, Pennsylvania, US	
+19	Win	18–0–1	United States Darnell Boone	TKO	2 (8), 1:32	1 Jun 2012	United States Sands Casino Resort, Bethlehem, Pennsylvania, US	
+18	Win	17–0–1	Russia Roman Simakov	TKO	7 (12), 0:47	5 Dec 2011	Russia DIVS, Yekaterinburg, Russia	Won WBC–ABCO light heavyweight title
+17	Draw	16–0–1	United States Grover Young	TD	2 (8)	27 Aug 2011	United States Playboy Mansion, Beverly Hills, California, US	Young unable to continue after an accidental foul
+16	Win	16–0	Kenya Douglas Otieno Okola	KO	2 (10), 2:39	29 Jul 2011	United States Cosmopolitan of Las Vegas, Paradise, Nevada, US	Won vacant NABA USA light heavyweight title
+15	Win	15–0	United States Terrance Woods	KO	3 (8), 1:54	6 May 2011	United States Fantasy Springs Resort Casino, Indio, California, US	
+14	Win	14–0	United States Julius Fogle	KO	2 (8), 1:16	1 Apr 2011	United States UIC Pavilion, Chicago, Illinois, US	
+13	Win	13–0	United States William Johnson	TKO	2 (6), 1:53	12 Mar 2011	United States Hilton Towers Ballroom, Lafayette, Louisiana, US	
+12	Win	12–0	Russia Karen Avetisyan	UD	6	15 Dec 2010	Russia Casino Vodoley, Yekaterinburg, Russia	
+11	Win	11–0	United States Dallas Vargas	TKO	2 (8), 1:16	19 Nov 2010	United States UIC Pavilion, Chicago, Illinois, US	
+10	Win	10–0	United States Darnell Boone	SD	8	9 Oct 2010	United States Metro Fitness, Atlanta, Georgia, US	
+9	Win	9–0	United States Kia Daniels	KO	1 (6), 1:58	11 Sep 2010	United States Playboy Mansion, Beverly Hills, California, US	
+8	Win	8–0	United States Harley Kilfian	TKO	2 (6), 1:24	19 Jun 2010	United States Emerald Queen Casino, Tacoma, Washington, US	
+7	Win	7–0	United States Nathan Bedwell	TKO	1 (4), 2:15	19 Mar 2010	United States Derby Park Expo, Louisville, Kentucky, US	
+6	Win	6–0	United States Francois Ambang	KO	2 (6), 2:23	6 Mar 2010	United States Patriot Center, Fairfax, Virginia, US	
+5	Win	5–0	United States Micky Stackhouse	TKO	2 (4), 1:07	10 Oct 2009	United States Coliseum Complex, Greensboro, North Carolina, US	
+4	Win	4–0	United States Ayodeji Fadeyi	RTD	1 (4), 3:00	12 Sep 2009	United States Playboy Mansion, Beverly Hills, California, US	
+3	Win	3–0	United States Michael Birthmark	RTD	1 (4), 3:00	29 Aug 2009	United States Emerald Queen Casino, Tacoma, Washington, US	
+2	Win	2–0	United States Darryl Johnson	TKO	1 (4), 2:06	8 Aug 2009	United States Metropolitan Convention Center, Columbia, South Carolina, US	
+1	Win	1–0	United States Daniel Chavez	TKO	1 (4), 0:55	25 Jul 2009	United States Coliseum Complex, Greensboro, North Carolina, US	Professional debut

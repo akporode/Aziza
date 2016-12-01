@@ -6,7 +6,7 @@ export default class Picture extends React.Component{
 		return (
 			<div className="col-md-4">
 			<h2>Picture</h2>
-			<img src ={picture.src} style={{width:100 +"%"}} className="img-thumbnail"/>
+			 <img src ={picture.src} style={{width:100 +"%"}} className="img-thumbnail"/>
 			</div>
 			);
 	}

@@ -5,29 +5,28 @@ import Tweet from  './Tweet';
 
 export default class TopHalf extends React.Component {
 
+
 	render() {
-		var rows = [];
-		var box = boxProfiles[1];
+
+		//console.log("TopHalf Boxing props " + this.props.boxerName);
 		
+		var rows = [];
+		var box = boxProfiles[this.props.boxerName];
+
+		return (<div>			
+			<div className="row">
+				 <Picture image={box.image}/>
+				<Statistic statistic={box.statistic} />
+				 <Tweet tweet={box.tweet}/>
+			</div>
+		</div>
+		);
 
 
-		return <div>			
-		<div className="row"><Picture image={box.image}/><Statistic statistic={box.statistic} /><Tweet tweet={box.tweet}/></div>
-		</div>;
 
 	}
 }
-// var boxProfile = [
-// {
-// 	images : {
 
-// 	},
-// 	statistics :{
-
-// 	}
-
-// }
-// ];
 var boxProfiles = [
 {
 	image :{
@@ -46,7 +45,7 @@ var boxProfiles = [
 		totalFights :	"31",
 		wins:	"30",
 		winsByKO:	"26",
-		losses:	"0",
+		losses:	"1",
 		draws:	"1" 
 	},
 	tweet : {

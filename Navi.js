@@ -5,12 +5,14 @@ import { IndexLink } from 'react-router';
 export default class Navi extends React.Component {
 	render() {
 		return (
-			<nav className="navbar navbar-inverse navbar-fixed-top">
+			<nav className="navbar">
 			<div className="container">
 			<div>
 			<ul role="nav" className="nav navbar-nav">
-			<li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
-			<li><Link to="/about">About</Link></li>
+			<li><IndexLink activeStyle={{color:'#53acff'}} to="/">Blog</IndexLink></li>
+			<li><IndexLink activeStyle={{color:'#53acff'}} to="/boxer/1">Boxer</IndexLink></li>
+			<li><IndexLink activeStyle={{color:'#53acff'}} to="/about">About</IndexLink></li>
+
 			</ul>
 
 			<div id="navbar" className="navbar-collapse collapse">

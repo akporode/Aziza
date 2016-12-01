@@ -15,6 +15,7 @@ export default class Tweet extends  React.Component{
       //this.props.ready(window.twttr, widgetWrapper, ::this.done)
       window.twttr.widgets.load(widgetWrapper);
 
+    //how to hanlde bundle.js:34916 Uncaught TypeError: Cannot read property 'widgets' of undefined
      
       //2. Re-render the widget whenever you come to that page i.e. you would delete the empty iframe,
       // replace it with the original embed code[a], then call twitter.widgets.load().

@@ -1,0 +1,43 @@
+What is React.js
+
+	React is a library used for rendering UI. It is a library for creating user interfaces
+      It builds on the all idea that at web pages are components.
+     It is really about widgets and components that can used
+      React js is all about Component hierachy
+It is a library bought by Facebook and open sourced 2 years ago. If you familiar with the MVC pattern. React enables you to do the “V” in MVC very well.
+
+Show how to build a simple HelloWorld React app?
+	Tools => Set up => quick lay of the learn -> 
+ Use JSX, 
+   ES6 =>  ES6 features, like constants, arrow functions, default arguments, array and object destructuring, spread and rest operators, string interpolation, iterators and generators, a decent module system, etc. 
+
+ Babel, 
+ Webpack =>Webpack for bundling our code
+ NPM =>NPM for package management
+
+Syntax of React
+Show a more moderately Complex React App
+	Mounting?
+        Fetching data
+  Fetch polyfill or use Request, Bluebird or Axios.
+
+Why react?
+
+It is fast and uses less memory
+Virtual DOM, does diff with real DOM, and updates the differnce.
+It plays well with other frameworks
+
+When to Use React?
+Layered Application
+ data-driven sites.
+one-way data flow philosophy for which we chose React in the first place!
+
+When not to use React?
+Static pages
+
+REact and Angular 2
+Angular —is framework - full user experience- use to create a single page application - server only sends one view and angular 2 takes over from there.
+Where to go for help?
+
+https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.dwnil5sjl
+
