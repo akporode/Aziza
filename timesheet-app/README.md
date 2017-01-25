@@ -23,9 +23,6 @@ Say what the step will be
 Give the example
 ```
 
-Install mongodb
-
-follow
 * [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-linux/#run-mongodb-community-edition) - install instructions
 
 
