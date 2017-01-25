@@ -1,8 +1,6 @@
-# Project Title
-
-One Paragraph of project description goes here
-This is simple timesheet app that I put together to showcase how to use React.js to build User Interface to capture and display data.  
-It uses MongoDB, a noSql datatore on the backend and Node's Express.js middleware.
+# TimeSheet App
+This is simple timesheet app that I put together to show how to use React.js to build User Interface to capture and display data.  
+It uses MongoDB, a NoSql datatore on the backend and Node's Express.js middleware.
 
 ## Getting Started
 
