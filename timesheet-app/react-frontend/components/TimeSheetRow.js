@@ -11,12 +11,6 @@ handleChange(event){
 		hours : event.target.value
 	});
 }
-fetchSongDetails(event) {
-  const song = event.target.parentNode
-  //console.log('We need to get the details for ', song);
-}
-
-
 
 render(){
 	const inOut = this.props.inOut === 'in' ? true : false;
@@ -27,16 +21,3 @@ render(){
 			</tr>);
 	}
 }
-
-
-//working
-// render(){
-// 	const inOut = this.props.inOut === 'in' ? true : false;
-// 		return(<tr data-item={this.props.dayOfWeek} onClick={this.fetchSongDetails}>
-// 			<td>{this.props.dayOfWeek}</td>
-// 			<td><input readOnly type="text" value={this.props.hours}/></td>
-// 			<td><input type="checkbox" defaultChecked={inOut}/></td>
-// 			</tr>);
-// 	}
-// }
-

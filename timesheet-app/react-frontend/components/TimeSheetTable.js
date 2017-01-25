@@ -10,6 +10,10 @@ export default class TimeSheetTable extends React.Component{
    constructor(props) {
    	super(props);
 
+	    this.handleChange = this.handleChange.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
+		this.handleEditModeSwitch = this.handleEditModeSwitch.bind(this);
+		this.fetchTimeSheets = this.fetchTimeSheets.bind(this);
 		//https://github.com/facebook/react/issues/6222
 		//this is needed to prevent the warning of switching from uncontrolled component to a controlled component
 		var monday = {
@@ -65,6 +69,7 @@ export default class TimeSheetTable extends React.Component{
 
 		this.state = { 
 			editMode: false, 
+			weeks:[],
 			employee:{},
 			monday:monday,
 			tuesday:tuesday,
@@ -73,32 +78,29 @@ export default class TimeSheetTable extends React.Component{
 			friday:friday
 		};
 
-		this.handleChange = this.handleChange.bind(this);
-		this.handleSubmit = this.handleSubmit.bind(this);
-		this.handleEditModeSwitch = this.handleEditModeSwitch.bind(this);
-		this.fetchTimeSheets = this.fetchTimeSheets.bind(this);
+		
 	
 	}
 	/*
 	* lifecycle component is called after component is mounted;
 	*/
 	componentDidMount() { 
+		this.fetchTimeSheets() ;
 		console.log("entering TimeSheetTable componentDidMount" );
 		
 		
 	}
+	
 	/*
 	* fetch time sheets on mount
 	*/
 	fetchTimeSheets() {
 
-
         var filterByWeek = this.props.filterByWeek;
         var email  = this.props.email;
 
-        //alert(" got into edit mode fetchTimeSheets" +  filterByWeek +" " + email)
        var fetchUrl = 'http://localhost:3000/timesheets' + '/' +  email+ '/' + filterByWeek;
-          alert(" fetchUrl : "  + fetchUrl);
+       alert(" fetchUrl : "  + fetchUrl);
 
 		fetch(fetchUrl)
 		.then((response) => response.json())
@@ -189,6 +191,7 @@ export default class TimeSheetTable extends React.Component{
 });
 
 this.setState({
+	editMode: false, 
 	employee : employee,
 	weeks: weeks,
 	monday : monday,
@@ -211,7 +214,6 @@ this.setState({
 */
 handleSubmit(event){
 
-alert("Form submit Got here");
 
 //if the POST request sends an XML payload to the server using application/xml or text/xml, then the request is preflighted.
 //var formData  = new FormData(document.getElementById('timeSheetForm'))
@@ -224,7 +226,6 @@ var formBody = {
 	timeSheet : [ this.state.monday,this.state.tuesday,this.state.wednesday,this.state.thursday,this.state.friday]
 };	
 
-console.log("body to post :"  + formBody.firstName + " " + formBody.timeSheet[0].date)
 
 fetch('http://localhost:3000/postTimesheets', {
 	method: 'POST',
@@ -234,15 +235,14 @@ fetch('http://localhost:3000/postTimesheets', {
 	body: JSON.stringify(formBody)
 	
 });
+
 this.setState({
-	editMode : false
+	editMode : false,
+	employee : this.state.employee,
+	email : this.props.email,
+	week : this.props.filterByWeek,
+	weeks : [ this.state.monday,this.state.tuesday,this.state.wednesday,this.state.thursday,this.state.friday]
 });
-
-  //when a user submits the form notify "TimeSheetContainer", who is parent component of TimeSheetWeekTable
-  //This bubbles the event back up the component hierarchy. 
-this.props.onUserSubmit(this.props.filterByWeek);
-
-    //this.props.onUserSelect(event.target.value);
 
 
 event.preventDefault();
@@ -339,7 +339,7 @@ handleChange(event){
 	}
 	if(event.target.id === "3" &&  event.target.type === 'checkbox')
 	{
-		//alert("alert wednesday" + this.state.wednesday.hours);
+	
 		var wednesday = {
 			id : this.state.wednesday.id,
 			hours : this.state.wednesday.hours,
@@ -357,7 +357,7 @@ handleChange(event){
 	//thursday
 	if(event.target.id === "4" &&  event.target.type === 'text')
 	{
-		alert("alert thursday" + this.state.thursday.hours);
+		
 		var thursday = {
 			id : this.state.thursday.id,
 			hours : event.target.value,
@@ -373,7 +373,7 @@ handleChange(event){
 	}
 	if(event.target.id === "4" &&  event.target.type === 'checkbox')
 	{
-		alert("alert thursday" + this.state.thursday.hours);
+		
 		var thursday = {
 			id : this.state.thursday.id,
 			hours : this.state.thursday.hours,
@@ -390,7 +390,7 @@ handleChange(event){
 	//friday
 	if(event.target.id === "5" &&  event.target.type === 'text')
 	{
-		//alert("alert friday" + this.state.friday.hours);
+		
 		var friday = {
 			id : this.state.friday.id,
 			hours : event.target.value,
@@ -424,7 +424,7 @@ handleChange(event){
 
 handleEditModeSwitch(event){
   var editMode =	event.target.value == "on"? true: false;
-  this.fetchTimeSheets();
+  //this.fetchTimeSheets();
   this.setState({
 			editMode : editMode
 		});
@@ -435,11 +435,12 @@ render(){
 	
 
 	var filterByWeek = this.props.filterByWeek;
-	console.log("filterByWeek in TimeSheetTable  " + filterByWeek)
+	alert("filterByWeek in TimeSheetTable  " + filterByWeek)
      
      var timeSheetTable ;
-      console.log("edit Mode : " + this.state.editMode)
+
      if(this.state.editMode){
+     	
      	timeSheetTable = (<table id="timesheetTable" className="table table-bordered table-hover table-condensed">
 		<thead><tr><th>Day Of Week</th><th>Hours</th><th>In/Out</th></tr></thead>
 		<tfoot><tr><td>Total</td><td>40</td><td></td></tr></tfoot>
@@ -476,15 +477,23 @@ render(){
      }
    else if(this.state.editMode == false) {
    	  
+   	     alert("read only mode editMode: " + this.state.weeks);
         var readOnlyTimeSheetRows = [];
-        this.props.weeks.forEach(function(week){
+        this.state.weeks.forEach(function(week){
+
+        alert(week.endOfWeek);
+        });
+
+        this.state.weeks.forEach(function(week){
+
         	if(week.endOfWeek === filterByWeek)
         	{
         	readOnlyTimeSheetRows.push(<TimeSheetRow date ={week.date} dayOfWeek = {week.dayName} hours = {week.hours} key={week.date} inOut = {week.inOut} />);
            }
         });
 
-        timeSheetTable = (<table id="timesheetTable" className="table table-bordered table-hover table-condensed">
+        timeSheetTable = (
+        	<table id="timesheetTable" className="table table-bordered table-hover table-condensed">
 		<thead><tr><th>Day Of Week</th><th>Hours</th><th>In/Out</th></tr></thead>
 		<tfoot><tr><td>Total</td><td>40</td><td></td></tr></tfoot>
 		<tbody>
@@ -492,6 +501,7 @@ render(){
 		</tbody>
 		</table>
 		);
+
    }
 
    var editDiv ;

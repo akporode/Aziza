@@ -1,5 +1,5 @@
 import React from 'react';
-import TimeSheetWeekOption from './TimeSheetWeekOption';
+import TimeSheetWeek from './TimeSheetWeek';
 
 export default class TimeSheetWeekContainer extends React.Component{
 	
@@ -11,13 +11,14 @@ export default class TimeSheetWeekContainer extends React.Component{
 	handleChange(event) {
    
 
-    //when a different week option is changed notify "TimeSheetContainer", who is parent component of TimeSheetWeekContainer
+    //when a different week option is changed notify "TimeSheetContainer"
+    //--the parent component of TimeSheetWeekContainer
     this.props.onUserSelect(event.target.value);
 
 
     console.log("Logging handleChange() " + event.target.value);
-}
- /*
+    }
+   /*
 	* lifecycle component is called after component is mounted;
 	*/
 	componentDidMount() { 
@@ -35,7 +36,7 @@ var unique = [...new Set(this.props.weeks.map(item => item))];
 
 var options = [];
 unique.forEach(function(item){
-	options.push(<TimeSheetWeekOption key={item} weekName={item} />);
+	options.push(<TimeSheetWeek key={item} weekName={item} />);
 });
 
 return (
