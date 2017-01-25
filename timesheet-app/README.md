@@ -1,6 +1,5 @@
 # TimeSheet App
-This is simple timesheet app that I put together to demonstrate how to use React.js to build UI to capture and display data.  
-It uses MongoDB, a NoSql database, on the backend and Express.js web middleware.
+This is simple timesheet app that I put together to demonstrate how to use React.js to build UI to capture and display data. It uses MongoDB, a NoSql database, on the backend and Express.js web middleware.
 
 ## Getting Started
 
