@@ -1,6 +1,8 @@
 # Project Title
 
 One Paragraph of project description goes here
+This is simple timesheet app that I put together to showcase how to use React.js to build User Interface to capture and display data.  
+It uses MongoDB, a noSql datatore on the backend and Node's Express.js middleware.
 
 ## Getting Started
 
@@ -58,9 +60,11 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [MongoDB](https://github.com/mongodb/docs) - The NoSql database
+* [Express.js](https://expressjs.com/) - webframe middleware
+* [React.js](https://facebook.github.io/react/) Javascript library for building UI
+* [Node.js](https://nodejs.org/en/) - Runtime environment
+* [npm](https://www.npmjs.com) - Node.js packaging maanager
 
 ## Contributing
 
