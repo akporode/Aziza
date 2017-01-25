@@ -23,10 +23,14 @@ Say what the step will be
 Give the example
 ```
 
-And repeat
+Install mongodb
 
 ```
-until finished
+follow instructions : https://docs.mongodb.com/manual/tutorial/install-mongodb-on-linux/#run-mongodb-community-edition
+
+after installing MongoDb, import timesheet app data into MongoDb
+
+mongoimport --db test --collection timesheets --drop --file timesheets.json
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
