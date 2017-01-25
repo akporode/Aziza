@@ -25,10 +25,11 @@ Give the example
 
 Install mongodb
 
-```
 follow
 * [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-linux/#run-mongodb-community-edition) - install instructions
 
+
+```
 after installing MongoDb, import timesheet app data into MongoDb by executing mongoimport command
 
 mongoimport --db test --collection timesheets --drop --file timesheets.json
