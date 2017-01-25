@@ -26,7 +26,8 @@ Give the example
 Install mongodb
 
 ```
-* follow [ MongoDB install instructions](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-linux/#run-mongodb-community-edition)
+follow
+* [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-linux/#run-mongodb-community-edition) - install instructions
 
 after installing MongoDb, import timesheet app data into MongoDb by executing mongoimport command
 
