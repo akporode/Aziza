@@ -26,9 +26,9 @@ Give the example
 Install mongodb
 
 ```
-follow instructions : https://docs.mongodb.com/manual/tutorial/install-mongodb-on-linux/#run-mongodb-community-edition
+follow [ MongoDB install instructions](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-linux/#run-mongodb-community-edition)
 
-after installing MongoDb, import timesheet app data into MongoDb
+after installing MongoDb, import timesheet app data into MongoDb by executing mongoimport command
 
 mongoimport --db test --collection timesheets --drop --file timesheets.json
 ```
