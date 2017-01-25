@@ -38,7 +38,7 @@ var Mixed = mongoose.Schema.Types.Mixed;
 var ObjectId = mongoose.Schema.Types.ObjectId;
 
 
-//TimeSheet models
+//timesheet models
 var timeSheetSchema = mongoose.Schema({
   id: { type: Number },
   nameOfWeek: { type: String },
@@ -73,8 +73,8 @@ app.get('/timesheets', function (req, res) {
 */
 app.post('/postTimesheets', function (req, res) {
 
-  debug(req.headers);
   debug(req.body);
+
   var timesheet = req.body.timeSheet;
 
   mongoose.model('timesheets').update(
