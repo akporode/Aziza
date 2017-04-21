@@ -11,7 +11,7 @@ export default class TimeSheetContainer extends React.Component{
 
 		this.state = {
 			filterByWeek: '2017-01-07',
-			email: 'akporode.shemi@gmail.com',
+			email: 'john.doe@gmail.com',
 			weeks : []
 
 		};

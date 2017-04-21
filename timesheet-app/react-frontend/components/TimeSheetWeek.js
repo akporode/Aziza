@@ -11,9 +11,7 @@ export default class TimeSheetWeek extends React.Component{
 	* lifecycle component is called after component is mounted;
 	*/
 	componentDidMount() { 
-		console.log("entering TimeSheetWeek componentDidMount" );
-		
-		
+		console.log("entering TimeSheetWeek componentDidMount" );	
 	}
 	
 }
