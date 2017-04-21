@@ -68,6 +68,8 @@ npm install react react-dom --save
 
 npm install babel babel-loader babel-core bable-preset-es2015 babel-preset-react --save
 
+npm install webpack webpack-dev-server --save
+
 npm start
 
 ```
