@@ -58,6 +58,7 @@ var weekSchema = mongoose.Schema({
 
 });
 
+mongoose.model("timesheets", weekSchema)
 /*
 * get all timesheets
 */

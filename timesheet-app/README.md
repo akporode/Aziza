@@ -34,29 +34,60 @@ mongoimport --db test --collection timesheets --drop --file timesheets.json
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Running the App
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
+1) Start Mongodb
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
+if you system PATH includes the location of MongoDb binary, simply enter mongod at the system prompt:
 
 ```
-Give an example
+mongod
 ```
 
-## Deployment
+2) Start Application Server - React-backend
 
-Add additional notes about how to deploy this on a live system
+Navigate to path the react-backend app: timesheet-app/react-backend. If your package.json file is configured correctly, simple enter npm start at the system prompt:
+
+```
+npm start
+```
+3) Start up  your favorite tool to test REST endpoints
+
+POSTMAN
+```
+GET  http://localhost:3000/timesheets
+to retrieve all timesheets
+
+GET http://localhost:3000/weeks/akporode.shemi@gmail.com
+to retrieve all weeks by user email address
+```
+
+4) Start up Frontend Server - React-frontend
+Navigate to path the react-frontend app: timesheet-app/react-frontend. Install the following packages and simple enter npm start at the system prompt:
+
+```
+npm install react react-dom --save
+
+npm install babel babel-loader babel-core bable-preset-es2015 babel-preset-react --save
+
+npm start
+
+```
+
+5) Start up your favorite browser to test the timesheet-app
+
+```
+Browse to http://localhost:2020, and poke around. Happy browsing
+```
+ 
+
+## What's the app about?
+
+1) allows you to look up timesheet by employee name
+2) allows you to look up timesheet by week for each employee 
+3) allos you to edit timesheet for a given week
 
 ## Built With
 
