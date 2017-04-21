@@ -1,9 +1,9 @@
 # TimeSheet App
-This is simple timesheet app that I put together to demonstrate how to use React.js to build UI to capture and display data. It uses MongoDB, a NoSql database, on the backend and Express.js web middleware.
+This is simple timesheet app that I put together to demonstrate how to use React.js to build UI to capture and display timesheet data. It uses MongoDB, a NoSql database, on the backend and Express.js web middleware.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. Go to https://github.com/akporode/Aziza and click on clone or download to download the source code
 
 ### Prerequisites
 
@@ -35,13 +35,11 @@ mongoimport --db test --collection timesheets --drop --file timesheets.json
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the App
-
-Explain how to run the automated tests for this system
+### Running the App
 
 1) Start Mongodb
 
-if you system PATH includes the location of MongoDb binary, simply enter mongod at the system prompt:
+if your system PATH includes the location of MongoDb binary, simply enter mongod at the system prompt:
 
 ```
 mongod
@@ -56,7 +54,6 @@ npm start
 ```
 3) Start up  your favorite tool to test REST endpoints
 
-POSTMAN
 ```
 GET  http://localhost:3000/timesheets
 to retrieve all timesheets
@@ -88,15 +85,15 @@ Browse to http://localhost:2020, and poke around. Happy browsing
 
 1) allows you to look up timesheet by employee name
 2) allows you to look up timesheet by week for each employee 
-3) allos you to edit timesheet for a given week
+3) allows you to edit timesheet for a given week
 
 ## Built With
 
-* [MongoDB](https://github.com/mongodb/docs) - The NoSql database
-* [Express.js](https://expressjs.com/) - webframe middleware
-* [React.js](https://facebook.github.io/react/) Javascript library for building UI
-* [Node.js](https://nodejs.org/en/) - Server side runtime environment
-* [npm](https://www.npmjs.com) - packaging manager provide by Node.js 
+* [MongoDB](https://github.com/mongodb/docs) - The NoSql database.
+* [Express.js](https://expressjs.com/) - web middleware.
+* [React.js](https://facebook.github.io/react/) Javascript library for building UI.
+* [Node.js](https://nodejs.org/en/) - Server side runtime environment.
+* [npm](https://www.npmjs.com) - packaging manager provide by Node.js.
 
 ## Authors
 
