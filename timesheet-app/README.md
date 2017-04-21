@@ -10,18 +10,19 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
+Install Node.js and npm. Node comes with npm installed
+
+Test: Run node -v.
+
+Test: Run npm -v 
+
 ```
 
 ### Installing
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
-
-```
-Give the example
-```
+Here are the steps
 
 * [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-linux/#run-mongodb-community-edition) - install instructions
 
