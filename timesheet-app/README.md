@@ -33,8 +33,6 @@ after installing MongoDb, import timesheet app data into MongoDb by executing mo
 mongoimport --db test --collection timesheets --drop --file timesheets.json
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
 ### Running the App
 
 1) Start Mongodb
